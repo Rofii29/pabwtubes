@@ -15,7 +15,9 @@ Route::resource('designs', DesignController::class);
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', function () {
+    return view('welcome');
+});
 // Route untuk halaman welcome
 Route::get('fashion', function () {
     return view('welcome');
